@@ -1,0 +1,187 @@
+{
+  "$schema": "https://titan.apimatic.io/api/build/schema",
+  "buildFileVersion": "1",
+  "generatePortal": {
+    "tailIncludes": "<script defer src='./static/api-recipes/AutoRenewal.js'></script> <script defer src='./static/api-recipes/BlockUnblockCards.js'></script> <script defer src='./static/api-recipes/OrderNewCards.js'></script> <script defer src='./static/api-recipes/MoveCardsBetweenGroups.js'></script> <script defer src='./static/api-recipes/RequestPinReminders.js'></script> <script defer src='./static/api-recipes/ScheduleCardBlock.js'></script> <script defer src='./static/api-recipes/GetCardInformation.js'></script> <script>document.addEventListener('DOMContentLoaded', (event) => {  APIMaticDevPortal.ready(({ registerWorkflow }) => {  registerWorkflow( 'page:api-recipes/auto-renewal', 'Auto Renewal', AutoRenewal);  registerWorkflow( 'page:api-recipes/block-unblock-cards', 'Block/Unblock Cards', BlockUnblockCards);   registerWorkflow( 'page:api-recipes/order-new-cards', 'Order New Cards', OrderNewCards);  registerWorkflow( 'page:api-recipes/move-cards-between-groups', 'Move Cards Between Groups', MoveCardsBetweenGroups);  registerWorkflow( 'page:api-recipes/request-pin-reminders', 'Request Pin Reminders', RequestPinReminders);  registerWorkflow( 'page:api-recipes/schedule-card-block', 'Schedule Card Block', ScheduleCardBlock);  registerWorkflow( 'page:api-recipes/get-card-information', 'Get Card Information', GetCardInformation);  });  });</script>",
+    "contentFolder": "./",
+    "apiSpecPath": "./spec",
+    "apiMergeSettings": {
+      "type": "Full"
+    },
+    "languageConfig": {
+      "http": {},
+      "java": {
+        "packageRepository": "Maven",
+        "packageSettings": {
+          "GroupId": "io.sdks",
+          "ArtifactId": "card-management-sdk",
+          "PackageName": "Card Management SDK",
+          "Version": "1.4.0"
+        }
+      },
+      "csharp": {
+        "packageRepository": "NuGet",
+        "packageSettings": {
+          "PackageName": "sdksio.CardManagementSDK",
+          "Version": "1.4.0"
+        }
+      },
+      "typescript": {
+        "packageRepository": "Npm",
+        "packageSettings": {
+          "PackageName": "card-management-sdk",
+          "Version": "1.4.0"
+        }
+      },
+      "php": {
+        "packageRepository": "Packagist",
+        "packageSettings": {
+          "VendorName": "shell",
+          "PackageName": "card-management-sdk",
+          "Version": "1.4.0"
+        }
+      },
+      "python": {
+        "packageRepository": "PyPI",
+        "packageSettings": {
+          "PackageName": "card-management-sdk",
+          "Version": "1.4.0"
+        }
+      },
+      "ruby": {
+        "packageRepository": "RubyGems",
+        "packageSettings": {
+          "PackageName": "card-management-sdk",
+          "Version": "1.4.0"
+        }
+      }
+    },
+    "portalSettings": {
+      "initialPlatform": "cs_net_standard_lib",
+      "container": "apimatic-widget",
+      "portalStyle": "default",
+      "baseUrl": "./",
+      "enableExport": true,
+      "enableConsoleCalls": true,
+      "useProxyForConsoleCalls": true,
+      "themeOverrides": {
+        "palette": {
+          "primaryColor": "#FBCE07",
+          "linkColor": "#DD1D21",
+          "colors": {
+            "C200": "#F7F7F7",
+            "C600": "#404040",
+            "C700": "#6D7783",
+            "C800": "#404040",
+            "C801": "#333333",
+            "C900": "#404040",
+            "C1000": "#1F1F1F"
+          }
+        },
+        "fontSource": [
+          "https://fonts.googleapis.com/css?family=Anonymous%20Pro",
+          "static/fonts/shell/WEB/ShellBold.woff",
+          "static/fonts/shell/WEB/ShellBold.woff2",
+          "static/fonts/shell/WEB/ShellBook.woff",
+          "static/fonts/shell/WEB/ShellBook.woff2",
+          "static/fonts/shell/WEB/ShellHeavy.woff",
+          "static/fonts/shell/WEB/ShellHeavy.woff2",
+          "static/css/fonts.css"
+        ],
+        "cssStyles": {
+          "headings": {
+            "fontFamily": "ShellHeavy",
+            "h1": {
+              "fontFamily": "ShellHeavy",
+              "fontSize": "40px",
+              "fontWeight": "800",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h2": {
+              "fontFamily": "ShellBold",
+              "fontSize": "30px",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h3": {
+              "fontFamily": "ShellHeavy",
+              "fontSize": "30px",
+              "fontWeight": "800",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h4": {
+              "fontFamily": "ShellBold",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h5": {
+              "fontFamily": "ShellHeavy",
+              "fontSize": "18px",
+              "fontWeight": "800",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h6": {
+              "fontFamily": "ShellBold",
+              "fontSize": "16px",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            }
+          },
+          "body": {
+            "fontFamily": "ShellBook",
+            "text1": {
+              "fontFamily": "ShellBook",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "text2": {
+              "fontFamily": "ShellBook",
+              "fontSize": "13.33px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "text3": {
+              "fontFamily": "ShellBook",
+              "fontSize": "11.85px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            }
+          },
+          "code": {
+            "fontFamily": "Anonymous Pro",
+            "inlineCode": {
+              "fontFamily": "Anonymous Pro",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "blockCode": {
+              "fontFamily": "Anonymous Pro",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            }
+          }
+        }
+      }
+    },
+    "pageTitle": "Shell",
+    "navTitle": "Card Mangement API",
+    "logoUrl": "static/images/logo.png",
+    "faviconUrl": "static/images/favicon.png",
+    "logoLink": ""
+  }
+}

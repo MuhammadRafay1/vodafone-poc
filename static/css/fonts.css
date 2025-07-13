@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "ShellBold";
+    src: url(../fonts/shell/WEB/ShellBold.woff2) format("woff2"),url(../fonts/shell/WEB/ShellBold.woff) format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ShellHeavy";
+    src: url(../fonts/shell/WEB/ShellHeavy.woff2) format("woff2"),url(../fonts/shell/WEB/ShellHeavy.woff) format("woff");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "ShellBook";
+    src: url(../fonts/shell/WEB/ShellBook.woff2) format("woff2"),url(../fonts/shell/WEB/ShellBook.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ShellBook";
+    src: url(../fonts/shell/WEB/ShellMedium.woff2) format("woff2"),url(../fonts/shell/WEB/ShellMedium.woff) format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "ShellBook";
+    src: url(../fonts/shell/WEB/Italic.woff2) format("woff2"),url(../fonts/shell/WEB/ShellBookItalic.woff) format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ShellBook";
+    src: url(../fonts/shell/WEB/ShellMediumItalic.woff2) format("woff2"),url(../fonts/shell/WEB/ShellMediumItalic.woff) format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+

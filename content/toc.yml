@@ -1,0 +1,23 @@
+toc:
+- generate: Setting Up SDKs
+  from: getting-started
+- group: API Recipes
+  items:
+    - page: Order New Cards
+      file: api-recipes/order-new-cards.md
+    - page: Get Card Information
+      file: api-recipes/get-card-information.md
+    - page: Block/Unblock Card
+      file: api-recipes/block-unblock-cards.md
+    - page: Move Cards Between Groups
+      file: api-recipes/move-cards-between-groups.md
+    - page: Request PIN Reminders
+      file: api-recipes/request-pin-reminders.md
+    - page: Auto Renewal
+      file: api-recipes/auto-renewal.md
+    - page: Schedule Card Block
+      file: api-recipes/schedule-card-block.md
+- generate: API Endpoints
+  from: endpoints      
+- generate: Models
+  from: models

@@ -1,0 +1,10 @@
+{
+  "MergeConfiguration": {
+      "MergeApis": true,
+      "MergedApiName": "Shell Card Management APIs"
+  },
+  "CodeGenSettings": {
+    "EnableGlobalUserAgent": true,
+    "AddSingleAuthDeprecatedCode": false
+  }
+}
