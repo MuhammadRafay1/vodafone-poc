@@ -18,6 +18,9 @@ jobs:
       
     - name: Zip files
       run: zip -qq -r portal-input.zip .
+
+    - name: List contents of portal-input.zip
+      run: unzip -l portal-input.zip
       
     # Call Apimatic Endpoint to generate 
     - name: Call build endpoint
@@ -30,6 +33,7 @@ jobs:
         CONTENT_TYPE=$(echo $RESPONSE | cut -d " " -f 2);
         echo "HTTP_CODE=$HTTP_CODE" >> $GITHUB_OUTPUT;
         echo "CONTENT_TYPE=$CONTENT_TYPE" >> $GITHUB_OUTPUT;
+
 
     - name: list
       run: ls
