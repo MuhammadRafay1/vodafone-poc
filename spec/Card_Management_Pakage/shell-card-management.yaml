@@ -6579,13 +6579,6 @@ paths:
           * Get card by card id or PAN
       operationId: CardDetails
       parameters:
-      - name: apikey
-        in: header
-        description: This is the API key of the specific environment which needs to be passed by the client.
-        required: true
-        style: simple
-        schema:
-          type: string
       - name: RequestId
         in: header
         description: Mandatory UUID (according to RFC 4122 standards) for requests and responses. This will be played back in the response from the request.
@@ -6974,13 +6967,6 @@ paths:
       description: "This API allows to move one or more fuel cards (up to 500) across card groups within a single account or across accounts under the same payer. If the API call succeeds, the API will return a reference number and queue the request for asynchronous processing.\r\n#### Supported operations\r\n  * Moving card to exisitng card group\r\n  * Moving card to new card group\r\n  * Removing a card from a card group \r\n\r\n#### Validation rules\r\n  * Number of cards per request does not exceed 500\r\n  * Given **PAN** for a card matches with only one card\r\n  * A card is allowed to be moved to the **TargetCardGroupId** or **TargetAccountNumber**\r\n  * A pending move request does not exist in the queue for a card submitted on the same date (customers local)\r\n  * A card has not been moved as part of a previous request on the same date (customers local)\r\n\r\n#### API response \r\n  * A main reference number for the API request (**MoveCardRequestReference**)\r\n  * Individual reference numbers (**MoveCardReference**) for each card move request that passes validation  \r\n  * A list of cards (**ErrorCards**) that failed validation along with the appropriate error code and message\r\n\r\n#### Asynchronous processing of valid API request \r\n  * Move card requests that have been submitted and processed will be reflected after midnight according to the customers local date\r\n"
       operationId: CardMove
       parameters:
-      - name: apikey
-        in: header
-        description: This is the API key of the specific environment which needs to be passed by the client.
-        required: true
-        style: simple
-        schema:
-          type: string
       - name: RequestId
         in: header
         description: Mandatory UUID (according to RFC 4122 standards) for requests and responses. This will be played back in the response from the request.
@@ -7170,7 +7156,7 @@ paths:
                         errorcode: steps.basicauthentication.InvalidBasicAuthenticationSource
       deprecated: false
       security:
-      - BasicAuth: []
+      - BearerToken: []
   /card-management/v1/pinreminder:
     post:
       tags:
@@ -8063,13 +8049,6 @@ paths:
           * card delivery address update
       operationId: DeliveryAddressUpdate
       parameters:
-      - name: apikey
-        in: header
-        description: This is the API key of the specific environment which needs to be passed by the client.
-        required: true
-        style: simple
-        schema:
-          type: string
       requestBody:
         description: Delivery Address Update Request Body
         content:
@@ -8254,7 +8233,7 @@ paths:
                         errorcode: steps.basicauthentication.InvalidBasicAuthenticationSource
       deprecated: false
       security:
-      - BasicAuth: []
+      - BearerToken: []
 components:
   schemas:
     LoggedInUserRequest:
