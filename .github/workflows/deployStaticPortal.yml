@@ -18,6 +18,12 @@ jobs:
       
     - name: Zip files
       run: zip -qq -r portal-input.zip .
+
+    - name: Check working directory
+      run: |
+        pwd
+        ls -lh
+
       
     # Call Apimatic Endpoint to generate 
     - name: Call build endpoint
