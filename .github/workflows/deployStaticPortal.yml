@@ -33,7 +33,7 @@ jobs:
         id: generate-portal
         run: | 
           RESPONSE=`curl -s --write-out '%{http_code}\t%{content_type}' --request POST --url 'https://api.apimatic.io/portal' \
-            -H 'Authorization:X-Auth-Key ${{ secrets.API_KEY }}' -F 'file=@portal-input.zip' -OJ`;
+            -H 'Authorization:X-Auth-Key ${{ secrets.API_KEY }}' -F "file=@portal-input.zip" -OJ`;
           
           HTTP_CODE=$(echo $RESPONSE | cut -d " " -f 1);
           CONTENT_TYPE=$(echo $RESPONSE | cut -d " " -f 2);
