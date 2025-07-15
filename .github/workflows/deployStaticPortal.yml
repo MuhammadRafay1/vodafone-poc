@@ -16,8 +16,8 @@ jobs:
       name : checkout-repo
       id: checkout-repo  
       
-    - name: Zip files
-      run: zip -qq -r portal-input.zip .
+    - name: Zip required files
+      run: zip -qq -r portal-input.zip static content spec APIMATIC-BUILD.json
 
     - name: List contents of portal-input.zip
       run: unzip -l portal-input.zip
